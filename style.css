@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.header
+{
+    position: relative;
+    height: 100vh;
+}
+.navbar-style
+{
+    box-shadow: 5px 8px #efefef;
+}
+.logo
+{
+    height: 56px;
+    padding: 2px 10px;
+}
+.vice-president {
+    font-size: 18px;
+    color: rgb(106, 3, 119); 
+}
+.icon-bar
+{
+    background: rgb(241, 207, 11);
+}
+li a
+{
+    color: rgb(22, 0, 102);
+}
+.big-text
+{
+    font-size: 52px;
+    text-align: left;
+    margin: 20px;
+    color: rgb(108, 28, 201);
+}
+.small-text
+{
+    font-size: 20px;
+    margin-left: 20px;
+}
+a.btn
+{
+    margin: 30px 10px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 20px;
+}
+a.btn-first
+{
+    background-color: rgb(241, 207, 11);
+    color: white;
+}
+a.btn-second
+{
+    background-color: transparent;
+    border: 1px solid rgb(108, 28, 201);
+    color: rgb(134, 69, 196);
+}
+a.btn:hover
+{  
+    background: rgb(241, 207, 11);
+    border: none;
+    color: rgb(62, 0, 133);
+    box-shadow: 5px 5px 10px #999;
+    transition: 0.3s;
+}
+.banner-image 
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-image img 
+{
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain the aspect ratio */
+}
+.banner-info
+{
+    margin: 30px 0;
+}
+
+/*SKILLS*/
+#skills {
+    background: linear-gradient(to right, rgb(134, 28, 129), rgb(33, 7, 104)); /* Gradient background for the skills section */
+    padding: 10px 0;
+    text-align: center;
+    color: rgb(212, 198, 43); /* Text color for better contrast on the gradient background */
+}
+
+#skills h2 {
+    color: rgb(236, 220, 68);
+}
+
+#skills p {
+    color: rgb(234, 247, 189);
+    margin-bottom: 10px;
+}
+
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill-item {
+    width: 200px;
+    margin: 0 10px 10px 10px;
+    text-align: center;
+    border: 1px solid #ddd; /* Border color for each skill */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    padding: 20px;
+}
+
+.skill-icon {
+    font-size: 36px;
+    margin-bottom: 0;
+    color: rgb(30, 0, 44);
+}
+
+
+/*EUCATION*/
+#education {
+    background-image: url('EDUCBG.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+    color: #fff;
+    text-align: center;
+
+}
+
+#education h2 {
+    color: rgb(255, 234, 0);
+    
+}
+#education h3
+{
+    color: rgb(236, 220, 68);
+}
+.school-container 
+{
+    background: linear-gradient(to right, rgba(136, 19, 89, 0.918), rgba(45, 20, 158, 0.568));
+    margin-bottom: 20px;
+    height:min-content;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5px 8px rgba(239, 239, 239, 0.424);
+}
+.school-logo 
+{
+    max-width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 20px;
+    box-shadow: 5px 5px 10px yellow;
+}
+
+#projects h2 
+{
+    color: rgb(78, 3, 72);
+}
+#projects p
+{
+    color: rgb(41, 51, 5);
+    margin-bottom: 10px;
+}
+#slider {
+    margin: 0 auto;
+    width: 600px;
+    height: max-content;
+    max-width:max-content;
+    text-align: center;
+    padding: 10px;
+ }
+ .slide-content img
+ {
+    max-width: 100%; /* Ensures that the image inside the slider content fits within the container */
+    height: auto; 
+ }
+
+ #slider input[type=radio] {
+    display: none;
+ }
+ #slider label {
+    cursor:pointer;
+    text-decoration: none;
+ }
+ #slides {
+    padding: 10px;
+    border: 3px solid #ccc;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+    border-radius: 8px;
+ }
+ #overflow {
+    width: 100%;
+    overflow: hidden;
+ }
+ #slide1:checked ~ #slides .inner {
+    margin-left: 0;
+ }
+ #slide2:checked ~ #slides .inner {
+    margin-left: -100%;
+ }
+ #slide3:checked ~ #slides .inner {
+    margin-left: -200%;
+ }
+ #slide4:checked ~ #slides .inner {
+    margin-left: -300%;
+ }
+ #slides .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 300px;
+    
+ }
+ #slides .slide {
+    width:25%;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+ }
+ #slides .slide_1 {
+    background: #00171F;
+    border-radius: 8px;
+ }
+ #slides .slide_2 {
+    background: #003459;
+    border-radius: 8px;
+ }
+ #slides .slide_3 {
+    background: #007EA7;
+    border-radius: 8px;
+ }
+ #slides .slide_4 {
+    background: #00A8E8;
+    border-radius: 8px;
+ }
+ #controls {
+    margin: -180px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+ }
+ #controls label {
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity: .4;
+ }
+ #controls label:hover {
+    opacity: 1;
+ }
+ #slide1:checked ~ #controls label:nth-child(2),
+ #slide2:checked ~ #controls label:nth-child(3),
+ #slide3:checked ~ #controls label:nth-child(4),
+ #slide4:checked ~ #controls label:nth-child(1) {
+    background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+    float:right;
+    margin: 0 -50px 0 0;
+    display: block;
+ }
+ #slide1:checked ~ #controls label:nth-last-child(2),
+ #slide2:checked ~ #controls label:nth-last-child(3),
+ #slide3:checked ~ #controls label:nth-last-child(4),
+ #slide4:checked ~ #controls label:nth-last-child(1) {
+    background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+    float:left;
+    margin: 0 0 0 -50px;
+    display: block;
+ }
+ #bullets {
+    margin: 150px 0 0;
+    text-align: center;
+ }
+ #bullets label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius:100%;
+    background: #ccc;
+    margin: 0 10px;
+ }
+ #slide1:checked ~ #bullets label:nth-child(1),
+ #slide2:checked ~ #bullets label:nth-child(2),
+ #slide3:checked ~ #bullets label:nth-child(3),
+ #slide4:checked ~ #bullets label:nth-child(4) {
+    background: #444;
+ }
+ @media screen and (max-width: 900px) {
+    #slide1:checked ~ #controls label:nth-child(2),
+    #slide2:checked ~ #controls label:nth-child(3),
+    #slide3:checked ~ #controls label:nth-child(4),
+    #slide4:checked ~ #controls label:nth-child(1),
+    #slide1:checked ~ #controls label:nth-last-child(2),
+    #slide2:checked ~ #controls label:nth-last-child(3),
+    #slide3:checked ~ #controls label:nth-last-child(4),
+    #slide4:checked ~ #controls label:nth-last-child(1) {
+       margin: 0;
+    }
+    #slides {
+       max-width: calc(100% - 140px);
+       margin: 0 auto;
+    }
+ }
+
+ #contact {
+    background: linear-gradient(to right, rgb(134, 28, 129), rgb(33, 7, 104)); 
+    padding: 5px 0;
+    text-align: center;
+    color: #2085eb; /* Adjust text color for better contrast */
+}
+#contact h2 {
+    color: rgb(211, 208, 22); /* Header text color */
+}
+
+#contact p {
+    color: rgb(221, 221, 221); /* Paragraph text color */
+    margin-bottom: 10px;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-icons a {
+    text-decoration: none;
+    color: #e0e256; /* Link color, adjust as needed */
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-icons i {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
